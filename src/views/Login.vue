@@ -1,7 +1,7 @@
 <template>
     <div class="loginwrapper">
           <form v-on:submit.prevent ="errorMessage.length==0? validateForm():''" class="formwrapper">
-                <h3 class="text-center titlesignup">Login</h3>
+                <h3 class="text-center titlesignup">Log ind</h3>
                 <div v-if="errorMessage" class="errormessage">
                    <div v-for="error in errorMessage" v-bind:key="error.index">
                     {{error}}
@@ -77,11 +77,16 @@ export default Vue.extend({
     position: relative;
     top: 2rem;
 }
+
+
+
 .loginwrapper{
     text-align: center;
     display: flex;
     justify-content: center;
     margin: 10%;
+
+
 }
 
 .submitbtn{
@@ -117,10 +122,7 @@ export default Vue.extend({
     transition: 2s ease-in-out;
     animation: cubic-bezier();
     animation-direction: alternate;
-    border-bottom: 2px solid #b1abdd;
-}
-.submitbtn{
-
+    border-bottom: 2px solid #4899FB;
 }
 
 
@@ -131,7 +133,7 @@ export default Vue.extend({
 
     }
     .formwrapper{
-        border-top: 2px solid  #7064c7;
+        border-top: 2px solid  #4899FB;
         box-shadow: rgba(0, 0, 0, 0.47) 0px 5px 14px;
         padding: 6rem 1rem;
         width: 40%;
