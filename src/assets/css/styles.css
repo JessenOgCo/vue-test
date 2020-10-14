@@ -5,3 +5,70 @@
   text-align: center;
   color: #2c3e50;
 }
+
+.signup{
+    position: relative;
+    top: 2rem;
+}
+
+
+
+.loginwrapper{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 10%;
+
+
+}
+
+.submitbtn{
+    background: #4899FB;
+    color: white;
+    width: 10em;
+    position: relative;
+    top: 1.2rem;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.submitbtn:focus{
+    outline: none;
+}
+.errormessage{
+    color: red;
+}
+.namesfield{
+    border: none;
+    border-bottom: 1px solid lightgray;
+    width: 80%;
+}
+
+.userinputwrapper{
+    padding-top: 1rem;
+}
+.namesfield:focus{
+    outline: none;
+}
+.namesfield:focus{
+    transition: 2s ease-in-out;
+    animation: cubic-bezier();
+    animation-direction: alternate;
+    border-bottom: 2px solid #4899FB;
+}
+
+
+@media(min-width:800px){
+    /* gælder nær bredden er mindst 800px, dvs over 800px */
+    .namesfield{
+      /*background-color: deeppink; */
+
+    }
+    .formwrapper{
+        border-top: 2px solid  #4899FB;
+        box-shadow: rgba(0, 0, 0, 0.47) 0px 5px 14px;
+        padding: 6rem 1rem;
+        width: 40%;
+    }
+}
