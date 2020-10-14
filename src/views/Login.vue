@@ -8,20 +8,22 @@
                    </div>
                 </div>
                 <div class="userinputwrapper">
-                <label for="username">
-                <p>UCL email</p>
-                <input type="text" v-on:click="clearError" v-model="username" id="username" class="namesfield" value="" />
-                </label>
+                  <label for="username">
+                    <p>UCL email</p>
+                    <input type="text" v-on:click="clearError" v-model="username" id="username" class="namesfield" value="" />
+                  </label>
                 </div>
                 <div>
-                <label for="password">
-                <p>Adgangskode</p>
-                <input type="password" v-on:click="clearError" id="password" v-model="password" class="namesfield" value="" />
-                </label>
+                  <label for="password">
+                    <p>Adgangskode</p>
+                    <input type="password" v-on:click="clearError" id="password" v-model="password" class="namesfield" value="" />
+                  </label>
                 </div>
-                <div><button type="submit" class="submitbtn">Log ind</button></div>
+                <div>
+                  <button type="submit" class="submitbtn">Log ind</button>
+                </div>
                 <div class="signup">
-                <span> Ny bruger?<router-link to='/signup'> Opret konto</router-link></span>
+                  <span> Ny bruger?<router-link to='/signup'> Opret konto</router-link></span>
                 </div>
           </form>
     </div>
